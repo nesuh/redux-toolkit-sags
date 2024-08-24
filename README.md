@@ -52,17 +52,28 @@ Project Structure
 bash
 Copy code
 redux-saga-users-fetch/
-├── src/
-│   ├── actions.js         # Action types and creators
-│   ├── App.js             # Main App component
-│   ├── index.js           # Entry point, Redux store configuration
-│   ├── reducers.js        # Redux reducer to handle user state
-│   ├── sagas.js           # Redux-Saga watchers and workers
-│   └── ...
-├── public/
-│   └── index.html         # HTML template
-├── package.json           # Project dependencies and scripts
-└── README.md              # Project documentation
+
+
+
+                  ├── src/
+                  │   ├── actions.js         # Action types and creators
+                  │   ├── App.js             # Main App component
+                  │   ├── index.js           # Entry point, Redux store configuration
+                  │   ├── reducers.js        # Redux reducer to handle user state
+                  │   ├── sagas.js           # Redux-Saga watchers and workers
+                  │   └── ...
+                  ├── public/
+                  │   └── index.html         # HTML template
+                  ├── package.json           # Project dependencies and scripts
+                  └── README.md              # Project documentation\
+
+
+
+
+
+
+
+
 Contributing
 Contributions are welcome! Please open an issue or submit a pull request if you have any improvements or bug fixes.
 
