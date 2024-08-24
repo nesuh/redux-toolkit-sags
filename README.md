@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+                   Redux-Saga Users Fetch Example
+This project is a simple React application that demonstrates how to use Redux-Saga to handle side effects, such as fetching data from an API. The application fetches a list of users from an external API and displays them in the UI.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Redux-Saga for handling asynchronous operations.
+Redux for state management.
+Fetches data from https://jsonplaceholder.typicode.com/users.
+Table of Contents
+Installation
+Usage
+Project Structure
+Contributing
+License
+Installation
+Follow these steps to set up and run the project locally:
 
-## Available Scripts
+Prerequisites
+Node.js (>= 14.x)
+npm or yarn
+Steps
+Clone the repository:
 
-In the project directory, you can run:
+bash
+Copy code
+git clone https://github.com/nesuh/redux-saga-users-fetch.git
+cd redux-saga-users-fetch
+Install dependencies:
 
-### `npm start`
+bash
+Copy code
+npm install
+# or
+yarn install
+Start the development server:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy code
+npm start
+# or
+yarn start
+The application will be running on http://localhost:3000.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Usage
+Once the application is running:
 
-### `npm test`
+Click on the Get Users button to fetch and display the users.
+The users' names will be displayed in a list below the button.
+Code Explanation
+Redux-Saga: The saga watches for the GET_USERS_FETCH action and triggers the workGetUsersFetch generator function, which performs the API call and dispatches the GET_USERS_SUCCESS action with the fetched users.
+Redux: Manages the state of the users and integrates seamlessly with Redux-Saga for handling side effects.
+Project Structure
+bash
+Copy code
+redux-saga-users-fetch/
+├── src/
+│   ├── actions.js         # Action types and creators
+│   ├── App.js             # Main App component
+│   ├── index.js           # Entry point, Redux store configuration
+│   ├── reducers.js        # Redux reducer to handle user state
+│   ├── sagas.js           # Redux-Saga watchers and workers
+│   └── ...
+├── public/
+│   └── index.html         # HTML template
+├── package.json           # Project dependencies and scripts
+└── README.md              # Project documentation
+Contributing
+Contributions are welcome! Please open an issue or submit a pull request if you have any improvements or bug fixes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Steps to Contribute:
+Fork the repository.
+Create a new branch (git checkout -b feature-branch-name).
+Make your changes.
+Commit your changes (git commit -m 'Add some feature').
+Push to the branch (git push origin feature-branch-name).
+Open a pull request.
