@@ -1,4 +1,4 @@
-                   Redux-Saga Users Fetch Example
+                   #Redux-Saga Users Fetch Example
 This project is a simple React application that demonstrates how to use Redux-Saga to handle side effects, such as fetching data from an API. The application fetches a list of users from an external API and displays them in the UI.
 
 Features
